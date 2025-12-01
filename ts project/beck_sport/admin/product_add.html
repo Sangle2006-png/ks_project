@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Danh mục sản phẩm</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>ADMIN PANEL</h1>
+            <button class="logout-btn">ĐĂNG XUẤT</button>
+        </div>
+    </header>
+    
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="#">Danh mục</a>
+                    <ul>
+                        <li><a href="">Thêm Danh mục</a></li>
+                        <li><a href="">Danh Sách Danh Mục</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Loại Sản Phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm Loại Sản Phẩm</a></li>
+                        <li><a href="">Danh Loại Sản Phẩm</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Sản Phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm Sản Phẩm</a></li>
+                        <li><a href="">Danh Sách Sản Phẩm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="admin-content-right">
+            <div class="admin-content-right-product_add">
+                <h1>Thêm Sản Phẩm</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <input type="text" placeholder="Nhập tên sản phẩm" name="cartegory_name" required>
+                    <select name="" id="">
+                        <option value="#">--Chọn Danh Mục</option>
+                    </select>
+                     <select name="" id="">
+                        <option value="#">--Chọn Loại Sản phẩm</option>
+                    </select>
+                    <input type="text" placeholder="Giá Sản Phẩm">
+                    <input type="text" placeholder="Giá khuyến mãi">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mô tả sản phẩm"></textarea><br>
+                    <label for="" style="display:block; font-weight:600; color:#2c3e50; margin-bottom:6px; text-transform:uppercase;">
+                     Ảnh Sản Phẩm
+                    </label>
+
+                    <input  multiple type="file">
+                    <input type="file">
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
